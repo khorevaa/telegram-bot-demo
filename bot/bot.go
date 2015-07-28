@@ -26,7 +26,7 @@ func stopBot(w http.ResponseWriter, r *http.Request) {
 }
 
 func getBot(client *http.Client) (*tgbotapi.BotAPI, error) {
-	bot, err := tgbotapi.NewBotAPI(token, client)
+	bot, err := tgbotapi.NewBotAPIwithClient(token, client)
 	if err != nil {
 		return nil, err
 	}
