@@ -20,7 +20,3 @@ Removes the Webhook so Telegram will stop sending you messages.
 Telegram will send the messages to this URL, this handles those requests. Only Telegram and you know the token, so nobody else has access to this URL.
 
 For more information about the Telegram Bot API go to https://core.telegram.org/bots/api
-
-## NOTE
-This is currently using my fork of Syfaro's telegram-bot-api which can be found in https://github.com/rausntos/telegram-bot-api.  
-The reason for creating that fork is that Syfaro's version uses http.DefaultClient which is not available in AppEngine. I made a pull request: https://github.com/Syfaro/telegram-bot-api/pull/6.

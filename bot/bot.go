@@ -4,7 +4,7 @@ import (
 	"appengine"
 	"appengine/urlfetch"
 	"encoding/json"
-	"github.com/raulsntos/telegram-bot-api"
+	"github.com/Syfaro/telegram-bot-api"
 	"io/ioutil"
 	"net/http"
 )
@@ -26,7 +26,7 @@ func stopBot(w http.ResponseWriter, r *http.Request) {
 }
 
 func getBot(client *http.Client) (*tgbotapi.BotAPI, error) {
-	bot, err := tgbotapi.NewBotAPIwithClient(token, client)
+	bot, err := tgbotapi.NewBotAPIWithClient(token, client)
 	if err != nil {
 		return nil, err
 	}
