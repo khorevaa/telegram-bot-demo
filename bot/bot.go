@@ -19,10 +19,12 @@ func init() {
 
 func startBot(w http.ResponseWriter, r *http.Request) {
 	setWebhook("https://"+r.URL.Host+"/"+token, r)
+	w.Write([]byte("The bot has been initialized."))
 }
 
 func stopBot(w http.ResponseWriter, r *http.Request) {
 	setWebhook("", r)
+	w.Write([]byte("The bot has been disabled."))
 }
 
 func getBot(client *http.Client) (*tgbotapi.BotAPI, error) {
