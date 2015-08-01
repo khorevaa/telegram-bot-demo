@@ -22,7 +22,7 @@ func startBot(w http.ResponseWriter, r *http.Request) {
 }
 
 func stopBot(w http.ResponseWriter, r *http.Request) {
-	setWebhook(""+token, r)
+	setWebhook("", r)
 }
 
 func getBot(client *http.Client) (*tgbotapi.BotAPI, error) {
