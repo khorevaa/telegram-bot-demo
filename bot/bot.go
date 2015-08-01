@@ -12,8 +12,8 @@ import (
 var token string = "HERE_GOES_YOUR_TELEGRAM_BOT_TOKEN"
 
 func init() {
-	http.HandleFunc("/start", startBot)
-	http.HandleFunc("/stop", stopBot)
+	http.HandleFunc("/"+token+"/start", startBot)
+	http.HandleFunc("/"+token+"/stop", stopBot)
 	http.HandleFunc("/"+token, handler)
 }
 
