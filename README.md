@@ -7,14 +7,13 @@ This is a simple Telegram bot that replies to every user message with the same m
 2. Change *HERE_GOES_YOUR_APP_ID* for your AppEngine app's ID in *app.yaml*
 3. Change *HERE_GOES_YOUR_TELEGRAM_BOT_TOKEN* for your Telegram Bot Token
 4. Deploy your app: ```goapp deploy -oauth app.yaml```
-5. Go to http://APP_ID.appspot.com/start to create the Webhook (you can go to */stop* to remove the Webhook)
-6. You should deploy again without the */start* and */stop* handlers (comment them in case you need them in the future) so that nobody can start or stop your bot.
+5. Go to http://APP_ID.appspot.com/YOUR_TOKEN/start to create the Webhook (you can go to */YOUR_TOKEN/stop* to remove the Webhook)
 
 ## How does this work?
 The app has three handlers:
-* **/start**  
+* **/YOUR_TOKEN/start**  
 Creates the Webhook for Telegram to send you the messages.
-* **/stop**  
+* **/YOUR_TOKEN/stop**  
 Removes the Webhook so Telegram will stop sending you messages.
 * **/YOUR_TOKEN**  
 Telegram will send the messages to this URL, this handles those requests. Only Telegram and you know the token, so nobody else has access to this URL.
