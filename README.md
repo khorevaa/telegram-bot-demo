@@ -1,6 +1,12 @@
 # telegram-bot-demo
-Example of a Telegram bot using Syfaro's telegram-bot-api [AppEngine]
-This is a simple Telegram bot that replies to every user message with the same message. It uses [Go](https://golang.org/) and deploys to [AppEngine](https://appengine.google.com/).
+Example of a Telegram bot using [Syfaro's telegram-bot-api](https://github.com/Syfaro/telegram-bot-api) [AppEngine]
+This is a simple Telegram bot that replies to every user message with the same message. It uses [Go](https://golang.org) and deploys to [AppEngine](https://appengine.google.com/).
+
+## Prerequisites
+* Have **Go** installed  
+https://golang.org
+* Have **telegram-bot-api** installed  
+```go get github.com/Syfaro/telegram-bot-api```
 
 ## How to use this
 1. Download this repo
