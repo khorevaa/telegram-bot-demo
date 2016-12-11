@@ -4,7 +4,7 @@ import (
 	"appengine"
 	"appengine/urlfetch"
 	"encoding/json"
-	"github.com/Syfaro/telegram-bot-api"
+	"github.com/go-telegram-bot-api/telegram-bot-api"
 	"io/ioutil"
 	"net/http"
 )
@@ -69,5 +69,5 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	msg := tgbotapi.NewMessage(update.Message.Chat.ID, update.Message.Text)
 	msg.ReplyToMessageID = update.Message.MessageID
 
-	bot.SendMessage(msg)
+	bot.Send(msg)
 }
