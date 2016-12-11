@@ -6,13 +6,13 @@ This is a simple Telegram bot that replies to every user message with the same m
 * Have **Go** installed  
 https://golang.org
 * Have **telegram-bot-api** installed  
-```go get github.com/Syfaro/telegram-bot-api```
+```go get github.com/go-telegram-bot-api/telegram-bot-api```
 
 ## How to use this
 1. Download this repo
 2. Change *HERE_GOES_YOUR_APP_ID* for your AppEngine app's ID in *app.yaml*
 3. Change *HERE_GOES_YOUR_TELEGRAM_BOT_TOKEN* for your Telegram Bot Token
-4. Deploy your app: ```goapp deploy -oauth app.yaml```
+4. Deploy your app: ```goapp deploy app.yaml```
 5. Go to http://APP_ID.appspot.com/YOUR_TOKEN/start to create the Webhook (you can go to */YOUR_TOKEN/stop* to remove the Webhook)
 
 ## How does this work?
